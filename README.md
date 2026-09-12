@@ -18,7 +18,7 @@ Two papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue
 **Per-device autoencoder anomaly detection** trains one autoencoder per device instead of a single pooled model, with thresholds calibrated using Extreme Value Theory and per-feature reconstruction error. Beats the pooled baseline on behavioral protocol attacks: 0.945 vs. 0.681 mean detection rate.
 `Python` `TensorFlow` `EVT`
 
-**Kill chain-aware IDS evaluation** compares Random Forest, LightGBM, a 1D-CNN, and an autoencoder across 18 attack categories, checking detection at each stage of the attack lifecycle instead of one aggregate score.
+**Kill chain-aware IDS evaluation** compares Random Forest, LightGBM, a 1D-CNN, and an autoencoder across 18 attack categories in the CICIoMT2024 dataset, checking detection at each stage of the attack lifecycle instead of one aggregate score. Results are validated with bootstrap confidence intervals and McNemar's test rather than a single accuracy number.
 `Python` `scikit-learn` `LightGBM` `SHAP` `LIME`
 
 ## Cybersecurity research
@@ -60,7 +60,7 @@ Both are internal systems; no public repos.
 
 Python, Java, TypeScript, SQL
 
-Cyber Threat Intelligence, Autoencoders, EVT, SHAP/LIME, Random Forest, XGBoost, CNNs, Transformers
+Cyber Threat Intelligence, Autoencoders, EVT, SHAP/LIME, Random Forest, LightGBM, XGBoost, CNNs, Transformers, Bootstrap CI / McNemar's Test
 
 RAG, LangChain, Hugging Face Transformers, PyTorch, scikit-learn, deepeval
 
