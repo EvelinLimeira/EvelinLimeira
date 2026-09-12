@@ -1,8 +1,15 @@
 # Evelin Limeira
 
-Software engineer and cybersecurity researcher based in João Pessoa, Brazil. Finishing an MSc in Software Engineering, researching intrusion detection for medical IoT networks with CISSA, and building systems for the Paraíba State Legislature (ALPB) day to day.
+Software engineer and cybersecurity researcher based in João Pessoa, Brazil. Finishing an MSc in Software Engineering at Cesar School, researching intrusion detection for medical IoT networks and coordinating a threat-intelligence data project with CISSA, and building systems for the Paraíba State Legislature (ALPB) day to day.
 
-[LinkedIn](https://www.linkedin.com/in/evelin-limeira) · [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2) · [Email](mailto:evelinlena@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/evelin-limeira) · [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2) · [Lattes](http://lattes.cnpq.br/8347885521421671) · [Email](mailto:evelinlena@gmail.com)
+
+## Education
+
+- MSc in Software Engineering — Cesar School (2025–present)
+- Specialization in Artificial Intelligence and Machine Learning — PUC Minas (2023–2024)
+- BSc in Systems Analysis and Development — UNINASSAU (2021–2022)
+- Bachelor of Laws — Universidade Federal da Paraíba (2006–2010)
 
 ## Publications
 
@@ -22,7 +29,11 @@ Two papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue
 **LLM-based IDS benchmark** — a side study on whether general-purpose LLMs can hold up against security-tuned ones at spotting IoMT attacks from raw traffic, run locally on quantized models. Private repo.
 `Python` `llama.cpp` `GGUF`
 
+**Xeque-Mate Agregador** — funded research project at CESAR (CISSA/EMBRAPII): an intelligent aggregator that collects, cleans, and semantically enriches cybersecurity data (logs, alerts, IoCs, threat-intel reports) into high-quality datasets for LLMs, aimed at better threat detection and response in SOCs.
+
 ## Work at ALPB
+
+Legislative Technical Advisor since 2014; working in a software engineering capacity since 2023.
 
 **REGI** — a RAG assistant that answers questions about the Legislature's internal rules and the state/federal constitutions at once. Hybrid search over ChromaDB and BM25, every answer cited back to the article it came from, running on a local model through Ollama.
 `Python` `RAG` `ChromaDB` `BM25` `Ollama` `Gradio`
@@ -56,4 +67,5 @@ Docker, Git, ChromaDB, FAISS, Ollama, llama.cpp
 
 - LinkedIn: [evelin-limeira](https://www.linkedin.com/in/evelin-limeira)
 - ResearchGate: [Evelin-Limeira-2](https://www.researchgate.net/profile/Evelin-Limeira-2)
+- Lattes: [8347885521421671](http://lattes.cnpq.br/8347885521421671)
 - Email: [evelinlena@gmail.com](mailto:evelinlena@gmail.com)
