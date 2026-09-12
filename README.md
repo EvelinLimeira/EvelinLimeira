@@ -31,7 +31,7 @@ Also private repos unless a link is given.
 **LLM-based IDS benchmark** is a side study on whether general-purpose LLMs can hold up against security-tuned ones at spotting IoMT attacks from raw traffic, run locally on quantized models.
 `Python` `llama.cpp` `GGUF`
 
-**Xeque-Mate Agregador** is a funded research project at CESAR (CISSA/EMBRAPII): an aggregator that pulls in cybersecurity data (logs, alerts, IoCs, threat-intel reports), cleans it, and enriches it semantically to build training datasets for LLMs used in SOC threat detection.
+**Xeque-Mate Agregador** is a cybersecurity data aggregator at CESAR (CISSA/EMBRAPII) that pulls logs, alerts, IoCs, and threat-intel reports into datasets for training LLMs on SOC threat detection. The motivation is practical: traditional tools bury analysts in irrelevant alerts, and there aren't enough analysts to begin with.
 
 ## Work at ALPB
 
