@@ -1,6 +1,6 @@
 # Evelin Limeira
 
-Software engineer and cybersecurity researcher based in João Pessoa, Brazil. Finishing an MSc in Software Engineering at Cesar School, researching intrusion detection for medical IoT networks and coordinating a threat-intelligence data project with CISSA, and building systems for the Paraíba State Legislature (ALPB) day to day.
+Software engineer and cybersecurity researcher based in João Pessoa, Brazil. Finishing an MSc in Software Engineering at Cesar School, researching intrusion detection for medical IoT networks and working as a researcher on a threat-intelligence data project with CISSA, and building systems for the Paraíba State Legislature (ALPB) day to day.
 
 [LinkedIn](https://www.linkedin.com/in/evelin-limeira) · [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2) · [Lattes](http://lattes.cnpq.br/8347885521421671) · [Email](mailto:evelinlena@gmail.com)
 
