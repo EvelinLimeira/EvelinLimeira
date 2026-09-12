@@ -1,68 +1,53 @@
 # Evelin Limeira
 
-**Software Engineer & Cybersecurity Researcher** — building ML-based intrusion detection for medical IoT networks, and RAG-based intelligent systems for the public sector.
-
-MSc Candidate in Software Engineering · Cybersecurity Researcher at CISSA · Systems Developer at Assembleia Legislativa da Paraíba (ALPB) · João Pessoa, Brazil
+Software engineer and cybersecurity researcher based in João Pessoa, Brazil. Finishing an MSc in Software Engineering, researching intrusion detection for medical IoT networks with CISSA, and building systems for the Paraíba State Legislature (ALPB) day to day.
 
 [LinkedIn](https://www.linkedin.com/in/evelin-limeira) · [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2) · [Email](mailto:evelinlena@gmail.com)
 
-## Currently
-
-- Finishing my MSc dissertation on per-device autoencoder anomaly detection for IoMT (Internet of Medical Things) networks
-- Building DeviceShield-IoMT, a hybrid intrusion-detection framework, with the CISSA cybersecurity research group
-- Developing REGI, a RAG-based legal assistant for the Paraíba State Legislature
-
 ## Publications
 
-2 papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue/view/1728) (Simpósio Brasileiro de Cibersegurança), on IoMT intrusion detection. Full list on [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2).
+Two papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue/view/1728) (Brazilian Symposium on Cybersecurity), both on IoMT intrusion detection. Full list on [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2).
 
-## Research Projects — Cybersecurity / IoMT
+## Cybersecurity research
 
-**DeviceShield-IoMT** *(MSc dissertation, work in progress · private repository)*
-Hybrid intrusion-detection framework combining benign-only autoencoders trained per device/species with global supervised classifiers (Random Forest, XGBoost, CNN, Transformer) and EVT statistical calibration. Evaluated with Leave-One-Attack-Out and Leave-One-Group-Out protocols across four public IoMT datasets (CICIoMT2024, N-BaIoT, MedSec-25, MedBIoT).
-`Python` · `TensorFlow/Keras` · `scikit-learn` · `EVT` · `SHAP`
+**Hybrid IDS for IoMT** (work in progress) — instead of one global model, an autoencoder is trained per device to catch anomalies, backed by a supervised classifier and EVT-based thresholds. Tested with leave-one-attack-out and leave-one-group-out splits across four IoMT datasets. Private repo.
+`Python` `TensorFlow` `scikit-learn` `EVT` `SHAP`
 
-**LLM-based IDS Benchmark** *(private repository)*
-Companion study benchmarking seven quantized open-source LLMs — general-purpose vs. cybersecurity-specialized — as intrusion detectors on IoMT network flows against the DeviceShield-IoMT baselines, controlling for base model vs. domain-specialized pretraining, with latency and explainability as first-class results.
-`Python` · `llama.cpp` · `GGUF` · local LLM inference
+**LLM-based IDS benchmark** — a side study on whether general-purpose LLMs can hold up against security-tuned ones at spotting IoMT attacks from raw traffic, run locally on quantized models. Private repo.
+`Python` `llama.cpp` `GGUF`
 
-## Selected Work — Public Sector Systems
+## Work at ALPB
 
-**REGI — Regimento Eletrônico de Gestão Inteligente**
-RAG-based legal assistant that answers natural-language questions across multiple legal sources at once — the Legislature's internal rulebook, the State Constitution, and the Federal Constitution. Combines ChromaDB semantic search with BM25 keyword search via Reciprocal Rank Fusion, routes each query to the most relevant source, and returns answers with structured inline citations (`[Source: Name, Art. N]`). Served through a local LLM (Gemma via Ollama) behind a Gradio interface.
-`Python` · `RAG` · `ChromaDB` · `BM25` · `Ollama` · `Gradio`
-*Internal system — Assembleia Legislativa da Paraíba*
+**REGI** — a RAG assistant that answers questions about the Legislature's internal rules and the state/federal constitutions at once. Hybrid search over ChromaDB and BM25, every answer cited back to the article it came from, running on a local model through Ollama.
+`Python` `RAG` `ChromaDB` `BM25` `Ollama` `Gradio`
 
-**Painel / Comissão Virtual**
-Real-time virtual committee and voting panel for legislative sessions, with WebSocket-based live updates, an OAuth2 authorization server, and automated generation of session documents (PDF/DOCX).
-`Java` · `Spring Boot` · `PostgreSQL` · `Angular` · `WebSocket/STOMP` · `OAuth2`
-*Internal system — Assembleia Legislativa da Paraíba*
+**Painel / Comissão Virtual** — the real-time panel used to run virtual committee sessions and votes: WebSocket updates, OAuth2 login, session documents generated automatically.
+`Java` `Spring Boot` `PostgreSQL` `Angular` `WebSocket/STOMP` `OAuth2`
 
-## Other Projects
+Both are internal systems built for the Assembleia Legislativa da Paraíba.
 
-**[RAG TriviaQA Pipeline](https://github.com/EvelinLimeira/rag-triviaqa-pipeline)**
-End-to-end RAG pipeline benchmarking BM25, dense (FAISS), and hybrid retrieval with cross-encoder reranking. Evaluated with an LLM-judge (via deepeval) for correctness, faithfulness, and answer relevancy, alongside classic IR metrics (Hit Rate@k, MRR).
-`Python` · `LangChain` · `FAISS` · `BM25` · `deepeval` · `Ollama`
+## Other projects
 
-**[Sentiment Analysis on Product Reviews](https://github.com/EvelinLimeira/sentiment-analysis-product-reviews)**
-Comparative NLP study of four sentiment-classification approaches — SVM+TF-IDF, SVM+embeddings, fine-tuned DistilBERT, and few-shot in-context learning — validated across 10 runs with different random seeds and statistical significance testing (Wilcoxon, Kruskal-Wallis).
-`Python` · `PyTorch` · `Transformers` · `scikit-learn`
+**[RAG TriviaQA pipeline](https://github.com/EvelinLimeira/rag-triviaqa-pipeline)** — BM25, dense, and hybrid retrieval with reranking, graded by an LLM judge instead of relying on IR metrics alone.
+`Python` `LangChain` `FAISS` `deepeval`
 
-**[Comparative Study: Detectron2 vs. Gemini](https://github.com/EvelinLimeira/estudo-comparativo-detectron-gemini)** *(team project)*
-Study comparing a traditional object-detection model (Detectron2-ResNet18) against a multimodal LLM (Gemini 2.0-flash) on a binary image-classification task, with statistical validation (Wilcoxon test) over 24 paired simulations.
-`Computer Vision` · `Detectron2` · `Gemini`
+**[Sentiment analysis on product reviews](https://github.com/EvelinLimeira/sentiment-analysis-product-reviews)** — four approaches to the same classification problem, from SVM+TF-IDF up to a fine-tuned DistilBERT, checked for statistical significance across 10 runs.
+`Python` `PyTorch` `Transformers` `scikit-learn`
+
+**[Detectron2 vs. Gemini](https://github.com/EvelinLimeira/estudo-comparativo-detectron-gemini)** (team project) — Detectron2-ResNet18 against Gemini 2.0-flash on the same image classification task. Gemini won on accuracy, Detectron won on latency.
+`Computer Vision` `Detectron2` `Gemini`
 
 ## Skills
 
-- **Languages** — Python, Java, TypeScript, SQL
-- **Cybersecurity / IDS** — Autoencoders, Extreme Value Theory (EVT), SHAP/LIME explainability, Random Forest, XGBoost, CNN/Transformer classifiers, CICIoMT2024/N-BaIoT/MedBIoT datasets
-- **ML / NLP** — RAG pipelines, LangChain, Hugging Face Transformers, PyTorch, scikit-learn, LLM evaluation (deepeval)
-- **Backend** — Spring Boot, PostgreSQL, WebSocket/STOMP, OAuth2
-- **Frontend** — Angular, TypeScript, Tailwind CSS
-- **Tools** — Docker, Git, ChromaDB, FAISS, Ollama, llama.cpp
+Python, Java, TypeScript, SQL
+Autoencoders, EVT, SHAP/LIME, Random Forest, XGBoost, CNNs, Transformers
+RAG, LangChain, Hugging Face Transformers, PyTorch, scikit-learn, deepeval
+Spring Boot, PostgreSQL, WebSocket/STOMP, OAuth2
+Angular, Tailwind CSS
+Docker, Git, ChromaDB, FAISS, Ollama, llama.cpp
 
-## Connect
+## Contact
 
-- LinkedIn — [evelin-limeira](https://www.linkedin.com/in/evelin-limeira)
-- ResearchGate — [Evelin-Limeira-2](https://www.researchgate.net/profile/Evelin-Limeira-2)
-- Email — [evelinlena@gmail.com](mailto:evelinlena@gmail.com)
+- LinkedIn: [evelin-limeira](https://www.linkedin.com/in/evelin-limeira)
+- ResearchGate: [Evelin-Limeira-2](https://www.researchgate.net/profile/Evelin-Limeira-2)
+- Email: [evelinlena@gmail.com](mailto:evelinlena@gmail.com)
