@@ -14,17 +14,7 @@ MSc Candidate in Software Engineering · Cybersecurity Researcher at CISSA · Sy
 
 ## Publications
 
-**Beyond Aggregate Accuracy: Kill Chain-Aware Evaluation of IoMT Intrusion Detection Models**
-E. E. D. Limeira, R. Roque, L. Cabral, F. Aires, W. R. M. Santos, M. Lima, J. A. Suruagy
-*Anais do Simpósio Brasileiro de Cibersegurança (SBSeg)*, 2026 · [DOI: 10.5753/sbseg.2026.27104](https://doi.org/10.5753/sbseg.2026.27104)
-Kill chain-aware analysis of Random Forest, LightGBM, a 1D-CNN, and an autoencoder across 18 attack categories on the CICIoMT2024 dataset, showing that aggregate accuracy conceals failures in detecting early-stage attack behaviors.
-
-**Per-Device Behavioral Anomaly Detection in IoMT Networks Using Autoencoders and EVT-Based Adaptive Thresholds**
-E. E. D. Limeira, R. Roque, L. Cabral, F. Aires, W. R. M. Santos, M. Lima
-*Anais do Simpósio Brasileiro de Cibersegurança (SBSeg)*, 2026, pp. 913–928 · [DOI: 10.5753/sbseg.2026.27109](https://doi.org/10.5753/sbseg.2026.27109)
-Per-device autoencoders (one per medical camera), calibrated with EVT-based and per-feature reconstruction-error thresholds, outperform a single pooled/global model on behavioral protocol attacks — mean detection rate 0.945 vs. 0.681 under LRE, and 0.836 vs. 0.524 under EVT.
-
-Full list on [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2).
+2 papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue/view/1728) (Simpósio Brasileiro de Cibersegurança), on IoMT intrusion detection. Full list on [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2).
 
 ## Research Projects — Cybersecurity / IoMT
 
