@@ -6,7 +6,13 @@ Software engineer and cybersecurity researcher based in João Pessoa, Brazil. Fi
 
 ## Publications
 
-Two papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue/view/1728) (Brazilian Symposium on Cybersecurity), both on IoMT intrusion detection. Full list on [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2).
+Two papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue/view/1728) (Brazilian Symposium on Cybersecurity), both on IoMT intrusion detection. Full list on [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2). The experiments behind them:
+
+**Per-device autoencoder anomaly detection** — one autoencoder per device instead of a single pooled model, thresholds calibrated with Extreme Value Theory and per-feature reconstruction error. Beats the pooled baseline on behavioral protocol attacks: 0.945 vs. 0.681 mean detection rate. Private repo.
+`Python` `TensorFlow` `EVT`
+
+**Kill chain-aware IDS evaluation** — compared Random Forest, LightGBM, a 1D-CNN, and an autoencoder across 18 attack categories, checking detection at each stage of the attack lifecycle instead of one aggregate score. Private repo.
+`Python` `scikit-learn` `LightGBM` `SHAP` `LIME`
 
 ## Cybersecurity research
 
