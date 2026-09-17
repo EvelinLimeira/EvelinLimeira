@@ -13,12 +13,12 @@ Software engineer and cybersecurity researcher based in João Pessoa, Brazil. Fi
 
 ## Publications
 
-Two papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue/view/1728) (Brazilian Symposium on Cybersecurity), both on IoMT intrusion detection. Full list on [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2). The experiments behind them (repos are private):
+Two papers accepted at [SBSeg 2026](https://sol.sbc.org.br/index.php/sbseg/issue/view/1728) (Brazilian Symposium on Cybersecurity), both on IoMT intrusion detection, each with a reproducible artifact repo. Full list on [ResearchGate](https://www.researchgate.net/profile/Evelin-Limeira-2).
 
-**Per-device autoencoder anomaly detection** trains one autoencoder per device instead of a single pooled model, with thresholds calibrated using Extreme Value Theory and per-feature reconstruction error. Beats the pooled baseline on behavioral protocol attacks: 0.945 vs. 0.681 mean detection rate.
+**[Per-device autoencoder anomaly detection](https://github.com/EvelinLimeira/autoencoders_sbseg2026_public)** trains one autoencoder per device instead of a single pooled model, with thresholds calibrated using Extreme Value Theory and per-feature reconstruction error. Beats the pooled baseline on behavioral protocol attacks: 0.945 vs. 0.681 mean detection rate.
 `Python` `TensorFlow` `EVT`
 
-**Kill chain-aware IDS evaluation** compares Random Forest, LightGBM, a 1D-CNN, and an autoencoder across 18 attack categories in the CICIoMT2024 dataset, checking detection at each stage of the attack lifecycle instead of one aggregate score. Results are validated with bootstrap confidence intervals and McNemar's test rather than a single accuracy number.
+**[Kill chain-aware IDS evaluation](https://github.com/EvelinLimeira/kill_chain_ids_eval_sbseg2026)** compares Random Forest, LightGBM, a 1D-CNN, and an autoencoder across 18 attack categories in the CICIoMT2024 dataset, checking detection at each stage of the attack lifecycle instead of one aggregate score. Results are validated with bootstrap confidence intervals and McNemar's test rather than a single accuracy number.
 `Python` `scikit-learn` `LightGBM` `SHAP` `LIME`
 
 ## Cybersecurity research
@@ -28,7 +28,7 @@ Also private repos unless a link is given.
 **Hybrid IDS for IoMT** (work in progress) uses one autoencoder per device rather than one global model, backed by a supervised classifier and EVT-based thresholds. Tested with leave-one-attack-out and leave-one-group-out splits across four IoMT datasets.
 `Python` `TensorFlow` `scikit-learn` `EVT` `SHAP`
 
-**LLM-based IDS benchmark** is a side study on whether general-purpose LLMs can hold up against security-tuned ones at spotting IoMT attacks from raw traffic, run locally on quantized models.
+**LLM-based IDS benchmark** (work in progress) compares pre-quantized open-source LLMs, general-purpose and cybersecurity-specialized, against classical ML baselines for IoMT intrusion detection, run locally on consumer hardware. Hypotheses are pre-registered before each run, so a negative result still counts.
 `Python` `llama.cpp` `GGUF`
 
 **Xeque-Mate Agregador** is a cybersecurity data aggregator at CESAR (CISSA/EMBRAPII) that pulls logs, alerts, IoCs, and threat-intel reports into datasets for training LLMs on SOC threat detection. The motivation is practical: traditional tools bury analysts in irrelevant alerts, and there aren't enough analysts to begin with.
