@@ -37,7 +37,7 @@ Also private repos unless a link is given.
 
 Legislative Technical Advisor since 2014, doing software engineering there since 2023.
 
-**REGI** is a RAG assistant that answers questions about the Legislature's internal rules and the state/federal constitutions at once. Hybrid search over ChromaDB and BM25, every answer cited back to the article it came from, running on a local model through Ollama.
+**REGI** is a RAG assistant that answers questions about the Legislature's internal rules and the state/federal constitutions at once. Hybrid search over ChromaDB and BM25 with Reciprocal Rank Fusion across multiple sources, a direct article lookup that skips generation entirely when it can, every answer cited back to the article it came from, running on Gemma through Ollama.
 `Python` `RAG` `ChromaDB` `BM25` `Ollama` `Gradio`
 
 **Painel / Comissão Virtual** is the real-time panel used to run virtual committee sessions and votes: WebSocket updates, OAuth2 login, session documents generated automatically.
